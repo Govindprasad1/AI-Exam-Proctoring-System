@@ -151,49 +151,7 @@ It handles:
 
 ---
 
-🏗️ System Architecture
-
-The proposed system follows a modular architecture in which different AI and processing components work together.
-
-                     ┌─────────────────────┐
-                     │      Candidate      │
-                     │  Webcam + Microphone│
-                     └──────────┬──────────┘
-                                │
-                         Video + Audio
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │    Client Interface │
-                     └──────────┬──────────┘
-                                │
-                         WebSocket / HTTP
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │   FastAPI Backend   │
-                     └──────────┬──────────┘
-                                │
-              ┌─────────────────┼─────────────────┐
-              │                 │                 │
-              ▼                 ▼                 ▼
-       ┌─────────────┐   ┌──────────────┐  ┌─────────────┐
-       │ Face / Frame│   │ Head Pose /  │  │    Audio    │
-       │  Detection  │   │   MediaPipe  │  │  Silero VAD │
-       └─────────────┘   └──────────────┘  └─────────────┘
-              │                 │                 │
-              └─────────────────┼─────────────────┘
-                                ▼
-                     ┌─────────────────────┐
-                     │ Detection / Events  │
-                     └──────────┬──────────┘
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │ Alerts / Monitoring │
-                     └─────────────────────┘
-
----
+--
 
 🔄 System Workflow
 
@@ -210,8 +168,6 @@ The general workflow of the system is:
 9. Silero VAD can analyze the audio stream for human speech.
 10. Detection results are processed by the monitoring system.
 11. Suspicious events can be flagged for further review.
-
----
 
 📂 Repository Structure
 
