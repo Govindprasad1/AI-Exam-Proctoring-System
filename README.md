@@ -47,7 +47,6 @@ The main objectives of the system are:
 1. Real-Time Video Processing
 
 The system accepts video frames from a client and processes them using computer vision techniques.
-
 Video processing can be used for:
 
 - Face detection
