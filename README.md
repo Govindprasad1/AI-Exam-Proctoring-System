@@ -31,7 +31,7 @@ The system is designed primarily for desktop and laptop environments, where suff
 
 The main objectives of the system are:
 
-- To provide AI-assisted monitoring for online examinations
+- To provide AI-assisted monitoring for online examination
 - To detect potentially suspicious activities in real time
 - To monitor candidate head movements and orientation
 - To identify the presence of multiple people or faces
